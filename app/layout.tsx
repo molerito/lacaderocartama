@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" });
 
 export const metadata: Metadata = {
-  title: 'Alberto Motos - Taller de Motos Enduro',
-  description: 'Especialistas en motos de campo y enduro. Servicio técnico profesional, mantenimiento y reparación.',
+  title: 'Lavadero Car-Tama',
+  description: 'Especialistas en lavado de vehículos con los mejores profesionales.',
   generator: 'v0.app',
   icons: {
     icon: [

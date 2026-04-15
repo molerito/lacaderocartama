@@ -143,6 +143,7 @@ export const siteConfig = {
       "/images/trabajo4.jpg",
       "/images/trabajo5.jpg",
       "/images/trabajo6.jpg",
+      "/images/trabajo7.jpg",
     ]
   },
 
