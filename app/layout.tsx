@@ -2,13 +2,14 @@ import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { siteConfig } from "@/lib/config"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" });
 
 export const metadata: Metadata = {
-  title: 'Lavadero Car-Tama',
-  description: 'Especialistas en lavado de vehículos con los mejores profesionales.',
+  title: siteConfig.seo.title,
+  description: siteConfig.seo.description,
   generator: 'v0.app',
   icons: {
     icon: [
