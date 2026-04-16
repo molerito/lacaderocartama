@@ -94,6 +94,10 @@ export const siteConfig = {
   // -------------------------------------------------------------------------
   // SERVICIOS (iconos disponibles: Wrench, Cog, Shield, Zap, Settings, RefreshCw)
   // -------------------------------------------------------------------------
+  service: {
+    description: "Ofrecemos una amplia gama de servicios para mantener tu vehículo impecable, desde lavados básicos hasta tratamientos especializados.",
+    object: "vehículo",
+  },
   services: [
     {
       icon: "Wrench",

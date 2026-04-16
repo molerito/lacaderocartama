@@ -19,10 +19,10 @@ export function Services() {
             Nuestros Servicios
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-balance">
-            Todo lo que tu <span className="text-primary">vehículo</span> necesita
+            Todo lo que tu <span className="text-primary"> {siteConfig.service.object}</span> necesita
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
-            Servicios especializados cualquier clase de vehículo con los mejores profesionales.
+            {siteConfig.service.description}
           </p>
         </div>
 
