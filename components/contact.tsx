@@ -41,7 +41,7 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const message = `Hola, soy *${formData.name}*.\n\nMi moto: ${formData.bike || "No especificada"}\nTeléfono: ${formData.phone || "No especificado"}\n\n${formData.message}`
+    const message = `Hola, soy *${formData.name}*.\n\nMi vehiculo: ${formData.bike || "No especificada"}\nTeléfono: ${formData.phone || "No especificado"}\n\n${formData.message}`
     window.open(`https://wa.me/${siteConfig.social.whatsapp}?text=${encodeURIComponent(message)}`, '_blank')
   }
 
