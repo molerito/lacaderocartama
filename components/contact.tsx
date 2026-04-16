@@ -101,7 +101,7 @@ export function Contact() {
 
             <div className="mt-8 p-6 bg-background rounded-lg border border-border">
               <h3 className="text-lg font-semibold text-foreground mb-3">
-                Ubicación del Taller
+                 {siteConfig.contact.text}
               </h3>
               {siteConfig.contact.mapUrl ? (
                 <a 

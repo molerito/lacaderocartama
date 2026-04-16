@@ -10,11 +10,18 @@ export const siteConfig = {
   shortName: "Lav", // Se muestra en el logo (máximo 2-3 caracteres)
   tagline: "Lavadero de coches especializado",
   description: "Lavadero de coches en Cártama Estación. Tu coche limpio y protegido en las mejores manos.",
+  hero: {
+    title: "Expertos en lavado de",
+    highlight: "vehículos",
+    description: "Servicio técnico profesional para el lavado de vehículos con la más alta calidad.",
+    alt: "Lavadero de coches profesional en acción",
+  },
 
   // -------------------------------------------------------------------------
   // DATOS DE CONTACTO
   // -------------------------------------------------------------------------
   contact: {
+    text: "Ubicación del lavadero", // Texto que se muestra en la sección de contacto
     phone: "+34 678 25 42 88",
     email: "info@lavadero.es",
     address: "Avenida de Andalucia 55, junto a Gasolinera , 29580 Estación de Cártama, Málaga",
@@ -64,6 +71,7 @@ export const siteConfig = {
     yearsExperience: "15+",
     bikesRepaired: "5K+",
     satisfaction: "100%",
+    numberText: "Coches limpiados"
   },
 
   // -------------------------------------------------------------------------

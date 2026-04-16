@@ -10,7 +10,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src={siteConfig.images.hero}
-          alt="Taller de motos enduro"
+          alt={siteConfig.hero.alt}
           fill
           className="object-cover"
           priority
@@ -24,11 +24,11 @@ export function Hero() {
             {siteConfig.tagline}
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight text-balance">
-            Expertos en lavado de {" "}
-            <span className="text-primary">vehículos</span>
+            {siteConfig.hero.title} {" "}
+            <span className="text-primary">{siteConfig.hero.highlight}</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed">
-            Servicio técnico profesional para el lavado de vehículos con la más alta calidad. 
+            {siteConfig.hero.description}
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -50,7 +50,7 @@ export function Hero() {
             </div>
             <div>
               <p className="text-3xl sm:text-4xl font-bold text-primary">{siteConfig.stats.bikesRepaired}</p>
-              <p className="text-sm text-muted-foreground mt-1">Coches limpiados</p>
+              <p className="text-sm text-muted-foreground mt-1">{siteConfig.stats.numberText}</p>
             </div>
             <div>
               <p className="text-3xl sm:text-4xl font-bold text-primary">{siteConfig.stats.satisfaction}</p>
