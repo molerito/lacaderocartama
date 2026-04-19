@@ -22,19 +22,13 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-2">
-            {siteConfig.images.logo ? (
-              <Image
-                src={siteConfig.images.logo}
-                alt={siteConfig.name}
-                width={40}
-                height={40}
-                className="w-10 h-10 rounded-lg object-contain"
-              />
-            ) : (
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">{siteConfig.shortName}</span>
-              </div>
-            )}
+            <Image
+              src={siteConfig.images.logo}
+              alt={siteConfig.name}
+              width={40}
+              height={40}
+              className="w-10 h-10 rounded-lg object-contain"
+            />
             <span className="text-foreground font-semibold text-xl tracking-tight">{siteConfig.name}</span>
           </Link>
 

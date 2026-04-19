@@ -6,8 +6,8 @@ export const siteConfig = {
   // -------------------------------------------------------------------------
   // INFORMACIÓN BÁSICA DEL LAVADERO
   // -------------------------------------------------------------------------
-  name: "Lavadero Car-tama",
-  shortName: "Lav", // Se muestra en el logo (máximo 2-3 caracteres)
+  name: "Lavadero Torreblanca",
+  shortName: "LT", // Se muestra en el logo (máximo 2-3 caracteres)
   tagline: "Lavadero de coches especializado",
   description: "Lavadero de coches en Cártama Estación. Tu coche limpio y protegido en las mejores manos.",
   hero: {
@@ -28,19 +28,19 @@ export const siteConfig = {
     // Coordenadas para Google Maps (opcional)
     // Para obtenerlas: busca tu dirección en Google Maps, haz clic derecho y copia las coordenadas
     mapCoordinates: {
-      lat: 36.73661194404217,
-      lng: -4.606403702773283
+      lat: 36.736688429683014,
+      lng: -4.606864380255691
   , 
-    },
+  },
     // URL de Google Maps (si prefieres usar un enlace directo)
-    mapUrl: "https://maps.app.goo.gl/Ui11HibZbocoNmFT6",
+    mapUrl: "https://maps.app.goo.gl/JsbJqdyjcCtVGdFp9",
   },
 
   // -------------------------------------------------------------------------
   // HORARIO DE ATENCIÓN
   // -------------------------------------------------------------------------
   schedule: {
-    weekdays: "Lun - Vie: 8:00 - 15:00",
+    weekdays: "Lun - Vie: 9:30 - 07:00",
     saturday: "Sáb: Cerrado",
     sunday: "Dom: Cerrado",
   },
@@ -49,11 +49,11 @@ export const siteConfig = {
   // REDES SOCIALES (deja vacío "" si no tienes alguna)
   // -------------------------------------------------------------------------
   social: {
-    instagram: "https://instagram.com/lavadero",
+ //   instagram: "https://instagram.com/lavadero",
     facebook: "https://facebook.com/lavadero",
-    youtube: "https://youtube.com/@lavadero",
-    tiktok: "", // Ejemplo: "https://tiktok.com/@albertomotos"
-    whatsapp: "34678254288", // Solo números, sin + ni espacios
+ //   youtube: "https://youtube.com/@lavadero",
+ //   tiktok: "", // Ejemplo: "https://tiktok.com/@albertomotos"
+ //   whatsapp: "34678254288", // Solo números, sin + ni espacios
   },
 
   // -------------------------------------------------------------------------
@@ -141,8 +141,9 @@ export const siteConfig = {
     // Deja vacío para mostrar el logo como placeholder
     about: "",
     // Logo personalizado (opcional - si no tienes, se usará el shortName)
-    logo: "", // Ejemplo: "/images/logo.png"
+    logo: // Ejemplo: "/images/logo.png"
     // Galería de trabajos (opcional)
+    "/images/logo.png",
     gallery: [
       "/images/trabajo1.jpg",
       // "/images/trabajo-2.jpg",
@@ -163,7 +164,7 @@ export const siteConfig = {
   // SEO (metadatos para buscadores)
   // -------------------------------------------------------------------------
   seo: {
-    title: "Lavadero Car-tama - Lavado de coches en Cártama Estación",
+    title: "Lavadero Torreblanca - Lavado de coches en Cártama Estación",
     description: "Lavadero de coches profesional con lavado exterior e interior, pulido, encerado y tratamientos especializados.",
     keywords: "lavadero coches, lavado coche Cártama, limpieza interior coche, pulido coche, encerado coche",
   },

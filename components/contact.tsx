@@ -1,20 +1,10 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Clock, MessageCircle } from "lucide-react"
+import { MapPin, Phone, Clock, EuroIcon } from "lucide-react"
 import { siteConfig } from "@/lib/config"
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    bike: "",
-    message: "",
-  })
-
   const contactInfo = [
     {
       icon: MapPin,
@@ -25,12 +15,12 @@ export function Contact() {
       icon: Phone,
       label: "Teléfono",
       value: siteConfig.contact.phone,
+      link: `tel:${siteConfig.contact.phone}`,
     },
     {
-      icon: MessageCircle,
-      label: "WhatsApp",
-      value: "Escríbenos directo",
-      link: `https://wa.me/${siteConfig.social.whatsapp}`,
+      icon: EuroIcon,
+      label: "Precio",
+      value: "Precios desde 35€, consulta sin compromiso", // Puedes personalizar esto o agregarlo a la configuración
     },
     {
       icon: Clock,
@@ -38,12 +28,6 @@ export function Contact() {
       value: siteConfig.schedule.weekdays,
     },
   ]
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const message = `Hola, soy *${formData.name}*.\n\nMi vehiculo: ${formData.bike || "No especificada"}\nTeléfono: ${formData.phone || "No especificado"}\n\n${formData.message}`
-    window.open(`https://wa.me/${siteConfig.social.whatsapp}?text=${encodeURIComponent(message)}`, '_blank')
-  }
 
   const mapPreviewUrl = siteConfig.contact.mapCoordinates
     ? `https://maps.google.com/maps?q=${siteConfig.contact.mapCoordinates.lat},${siteConfig.contact.mapCoordinates.lng}&z=16&output=embed`
@@ -98,115 +82,45 @@ export function Contact() {
                 )
               })}
             </div>
-
-            <div className="mt-8 p-6 bg-background rounded-lg border border-border">
-              <h3 className="text-lg font-semibold text-foreground mb-3">
-                 {siteConfig.contact.text}
-              </h3>
-              {siteConfig.contact.mapUrl ? (
-                <a 
-                  href={siteConfig.contact.mapUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block aspect-video bg-muted rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
-                >
-                  {mapPreviewUrl ? (
-                    <iframe
-                      src={mapPreviewUrl}
-                      title="Ubicación en Google Maps"
-                      className="w-full h-full border-0 pointer-events-none"
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-muted">
-                      <div className="text-center">
-                        <MapPin className="w-8 h-8 text-primary mx-auto mb-2" />
-                        <p className="text-foreground font-medium">Ver en Google Maps</p>
-                        <p className="text-muted-foreground text-sm mt-1">{siteConfig.contact.address}</p>
-                      </div>
-                    </div>
-                  )}
-                </a>
-              ) : (
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
-                    <p className="text-muted-foreground text-sm">Mapa interactivo</p>
-                  </div>
-                </div>
-              )}
-            </div>
           </div>
 
-          <div className="bg-background rounded-lg border border-border p-6 sm:p-8">
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              Escríbenos por WhatsApp
+          <div className="p-6 bg-background rounded-lg border border-border h-fit">
+            <h3 className="text-lg font-semibold text-foreground mb-3">
+               {siteConfig.contact.text}
             </h3>
-            <p className="text-muted-foreground text-sm mb-6">
-              Rellena el formulario y te responderemos directamente por WhatsApp.
-            </p>
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Nombre
-                  </label>
-                  <Input
-                    id="name"
-                    type="text"
-                    placeholder="Tu nombre"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
+            {siteConfig.contact.mapUrl ? (
+              <a 
+                href={siteConfig.contact.mapUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block aspect-video bg-muted rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
+              >
+                {mapPreviewUrl ? (
+                  <iframe
+                    src={mapPreviewUrl}
+                    title="Ubicación en Google Maps"
+                    className="w-full h-full border-0 pointer-events-none"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
                   />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-muted">
+                    <div className="text-center">
+                      <MapPin className="w-8 h-8 text-primary mx-auto mb-2" />
+                      <p className="text-foreground font-medium">Ver en Google Maps</p>
+                      <p className="text-muted-foreground text-sm mt-1">{siteConfig.contact.address}</p>
+                    </div>
+                  </div>
+                )}
+              </a>
+            ) : (
+              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <MapPin className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
+                  <p className="text-muted-foreground text-sm">Mapa interactivo</p>
                 </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                    Teléfono
-                  </label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="+34 600 000 000"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  />
-                </div>
               </div>
-
-              <div>
-                <label htmlFor="bike" className="block text-sm font-medium text-foreground mb-2">
-                  Tu vehículo (marca y modelo)
-                </label>
-                <Input
-                  id="bike"
-                  type="text"
-                  placeholder="Ej: Peugeot Rifter XL"
-                  value={formData.bike}
-                  onChange={(e) => setFormData({ ...formData, bike: e.target.value })}
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Mensaje
-                </label>
-                <Textarea
-                  id="message"
-                  placeholder="Cuéntanos qué servicio necesitas..."
-                  rows={4}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  required
-                />
-              </div>
-
-              <Button type="submit" size="lg" className="w-full">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Enviar por WhatsApp
-              </Button>
-            </form>
+            )}
           </div>
         </div>
       </div>

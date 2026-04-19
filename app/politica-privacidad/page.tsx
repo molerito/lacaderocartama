@@ -14,7 +14,7 @@ export default function PoliticaPrivacidadPage() {
               Protección de tus datos personales
             </h1>
             <p className="mt-4 text-muted-foreground text-lg leading-8">
-              En {siteConfig.name} valoramos la privacidad de nuestros clientes y visitantes. Esta página describe cómo usamos los datos que nos envías únicamente para solicitar una cita o responder a tus consultas.
+              En {siteConfig.name} valoramos la privacidad de nuestros clientes y visitantes. Esta página dE cómo usamos los datos que nos envías únicamente para solicitar una cita o responder a tus consultas.
             </p>
           </div>
 
@@ -32,20 +32,7 @@ export default function PoliticaPrivacidadPage() {
             </p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-foreground">3. Cómo contactar</h2>
-            <p className="text-muted-foreground leading-7">
-              Si deseas contactarnos, puedes hacerlo por correo electrónico o WhatsApp. Estos son nuestros datos de contacto oficiales:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-7">
-              <li>
-                Correo electrónico: <a className="text-primary hover:underline" href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a>
-              </li>
-              <li>
-                Teléfono: <a className="text-primary hover:underline" href={`tel:${siteConfig.contact.phone}`}>{siteConfig.contact.phone}</a>
-              </li>             
-            </ul>
-          </section>
+         
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">4. Sobre esta web</h2>

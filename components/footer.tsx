@@ -23,19 +23,13 @@ export function Footer() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2">
-              {siteConfig.images.logo ? (
-                <Image
-                  src={siteConfig.images.logo}
-                  alt={siteConfig.name}
-                  width={40}
-                  height={40}
-                  className="w-10 h-10 rounded-lg object-contain"
-                />
-              ) : (
-                <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-lg">{siteConfig.shortName}</span>
-                </div>
-              )}
+              <Image
+                src={siteConfig.images.logo}
+                alt={siteConfig.name}
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-lg object-contain"
+              />
               <span className="text-foreground font-semibold text-xl tracking-tight">{siteConfig.name}</span>
             </Link>
             <p className="mt-4 text-muted-foreground max-w-sm">
