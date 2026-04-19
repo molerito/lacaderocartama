@@ -6,7 +6,7 @@ export const siteConfig = {
   // -------------------------------------------------------------------------
   // INFORMACIÓN BÁSICA DEL LAVADERO
   // -------------------------------------------------------------------------
-  name: "Lavadero Torreblanca",
+  name: "Lavados Torreblanca",
   shortName: "LT", // Se muestra en el logo (máximo 2-3 caracteres)
   tagline: "Lavadero de coches especializado",
   description: "Lavadero de coches en Cártama Estación. Tu coche limpio y protegido en las mejores manos.",
@@ -165,7 +165,7 @@ export const siteConfig = {
   // SEO (metadatos para buscadores)
   // -------------------------------------------------------------------------
   seo: {
-    title: "Lavadero Torreblanca - Lavado de coches en Cártama Estación",
+    title: "Lavados Torreblanca - Lavado de coches en Cártama Estación",
     description: "Lavadero de coches profesional con lavado exterior e interior, pulido, encerado y tratamientos especializados.",
     keywords: "lavadero coches, lavado coche Cártama, limpieza interior coche, pulido coche, encerado coche",
   },
