@@ -150,13 +150,14 @@ export const siteConfig = {
       // "/images/trabajo-3.jpg",
     ],
     aboutCarousel: [
-      "/images/trabajo1.jpg",
+      "/images/trabajo1.png",
       "/images/trabajo2.jpg",
       "/images/trabajo3.jpg",
       "/images/trabajo4.jpg",
       "/images/trabajo5.jpg",
       "/images/trabajo6.jpg",
       "/images/trabajo7.jpg",
+      "/images/trabajo8.jpg",
     ]
   },
 
