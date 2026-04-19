@@ -143,7 +143,7 @@ export const siteConfig = {
     // Logo personalizado (opcional - si no tienes, se usará el shortName)
     logo: // Ejemplo: "/images/logo.png"
     // Galería de trabajos (opcional)
-    "/images/logo.png",
+    "/images/Logo.png",
     gallery: [
       "/images/trabajo1.jpg",
       // "/images/trabajo-2.jpg",
