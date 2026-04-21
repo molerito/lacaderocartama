@@ -6,14 +6,14 @@ export const siteConfig = {
   // -------------------------------------------------------------------------
   // INFORMACIÓN BÁSICA DEL LAVADERO
   // -------------------------------------------------------------------------
-  name: "Lavados Torreblanca",
+  name: "Bright-CAR-ADRI",
   shortName: "LT", // Se muestra en el logo (máximo 2-3 caracteres)
   tagline: "Lavadero de coches especializado",
-  description: "Lavadero de coches en Cártama Estación. Tu coche limpio y protegido en las mejores manos.",
+  description: "Lavadero de coches a mano en Ronda. Tu coche limpio y protegido en las mejores manos.",
   hero: {
     title: "Expertos en lavado de",
     highlight: "vehículos",
-    description: "Servicio técnico profesional para el lavado de vehículos con la más alta calidad.",
+    description: "Servicio técnico profesional para el lavado a mano de vehículos con la más alta calidad.",
     alt: "Lavadero de coches profesional en acción",
   },
 
@@ -22,26 +22,26 @@ export const siteConfig = {
   // -------------------------------------------------------------------------
   contact: {
     text: "Ubicación del lavadero", // Texto que se muestra en la sección de contacto
-    phone: "+34 678 25 42 88",
+    phone: "+34 722 50 86 65",
     email: "info@lavadero.es",
-    address: "Avenida de Andalucia 55, junto a Gasolinera , 29580 Estación de Cártama, Málaga",
+    address: "C. Montes, 29400 Ronda, Málaga, España",
     // Coordenadas para Google Maps (opcional)
     // Para obtenerlas: busca tu dirección en Google Maps, haz clic derecho y copia las coordenadas
     mapCoordinates: {
-      lat: 36.736688429683014,
-      lng: -4.606864380255691
+      lat: 36.74465694973382,
+      lng: -5.159095988229407
   , 
   },
     // URL de Google Maps (si prefieres usar un enlace directo)
-    mapUrl: "https://maps.app.goo.gl/JsbJqdyjcCtVGdFp9",
+    mapUrl: "https://maps.app.goo.gl/r6arRRkW2qGVSRY76",
   },
 
   // -------------------------------------------------------------------------
   // HORARIO DE ATENCIÓN
   // -------------------------------------------------------------------------
   schedule: {
-    weekdays: "Lun - Vie: 9:30 - 07:00",
-    saturday: "Sáb: Cerrado",
+    weekdays: "Lun - Vie: 9:00 - 14:00, 14:00 - 20:00",
+    saturday: "Sáb: 9:00 - 14:00",
     sunday: "Dom: Cerrado",
   },
 
@@ -53,7 +53,7 @@ export const siteConfig = {
     facebook: "https://facebook.com/lavadero",
  //   youtube: "https://youtube.com/@lavadero",
  //   tiktok: "", // Ejemplo: "https://tiktok.com/@albertomotos"
- //   whatsapp: "34678254288", // Solo números, sin + ni espacios
+    whatsapp: "34722508665", // Solo números, sin + ni espacios
   },
 
   // -------------------------------------------------------------------------
@@ -81,12 +81,12 @@ export const siteConfig = {
     foundedYear: "2010",
     title: "El mejor servicio de lavado de coches desde 2010",
     description: [
-      "En nuestro lavadero contamos con limpieza integral, tratamientos ecológicos y acabados profesionales para que tu coche luzca como nuevo.",
+      "En nuestro lavadero contamos con lavado a mano integral, tratamientos ecológicos y acabados profesionales para que tu coche luzca como nuevo.",
     ],
     features: [
-      "Especialistas en lavado exterior e interior",
-      "Tratamientos cerámicos y encerados profesionales",
-      "Limpieza de tapicerías y desodorización profunda",
+      "Especialistas en lavado a mano exterior e interior",
+      "Tratamientos cerámicos y encerados profesionales a mano",
+      "Limpieza a mano de tapicerías y desodorización profunda",
       "Atención cercana y servicios personalizados",
     ],
   },
@@ -95,39 +95,39 @@ export const siteConfig = {
   // SERVICIOS (iconos disponibles: Wrench, Cog, Shield, Zap, Settings, RefreshCw)
   // -------------------------------------------------------------------------
   service: {
-    description: "Ofrecemos una amplia gama de servicios para mantener tu vehículo impecable, desde lavados básicos hasta tratamientos especializados.",
+    description: "Ofrecemos una amplia gama de servicios de lavado a mano para mantener tu vehículo impecable, desde lavados básicos hasta tratamientos especializados.",
     object: "vehículo",
   },
   services: [
     {
       icon: "Wrench",
       title: "Lavado Exterior Premium",
-      description: "Limpieza a mano con productos profesionales y secado sin marcas para un acabado perfecto.",
+      description: "Lavado a mano con productos profesionales y secado sin marcas para un acabado perfecto.",
     },
     {
       icon: "Cog",
       title: "Lavado Interior",
-      description: "Aspirado, limpieza de tapicerías y detalles interiores para dejar tu coche listo y confortable.",
+      description: "Aspirado a mano, limpieza de tapicerías y detalles interiores para dejar tu coche listo y confortable.",
     },
     {
       icon: "Shield",
       title: "Pulido y Encerado",
-      description: "Pulido profesional y encerado para proteger la pintura y devolver el brillo a tu vehículo.",
+      description: "Pulido a mano profesional y encerado para proteger la pintura y devolver el brillo a tu vehículo.",
     },
     {
       icon: "Zap",
       title: "Tratamiento de Tapicerías",
-      description: "Limpieza profunda de tejidos y piel, eliminación de manchas y protección contra suciedad futura.",
+      description: "Limpieza profunda a mano de tejidos y piel, eliminación de manchas y protección contra suciedad futura.",
     },
     {
       icon: "Settings",
       title: "Descontaminación y Cristalizado",
-      description: "Eliminación de residuos, alquitrán y película ambiental para mantener la carrocería impecable.",
+      description: "Eliminación a mano de residuos, alquitrán y película ambiental para mantener la carrocería impecable.",
     },
     {
       icon: "RefreshCw",
       title: "Aspirado y Desodorización",
-      description: "Limpieza total del habitáculo y fragancia fresca para una experiencia agradable al volante.",
+      description: "Limpieza total a mano del habitáculo y fragancia fresca para una experiencia agradable al volante.",
     },
   ],
 
@@ -165,9 +165,9 @@ export const siteConfig = {
   // SEO (metadatos para buscadores)
   // -------------------------------------------------------------------------
   seo: {
-    title: "Lavados Torreblanca - Lavado de coches en Cártama Estación",
-    description: "Lavadero de coches profesional con lavado exterior e interior, pulido, encerado y tratamientos especializados.",
-    keywords: "lavadero coches, lavado coche Cártama, limpieza interior coche, pulido coche, encerado coche",
+    title: "Lavados Bright-CAR-ADRI - Lavado a mano de coches en Ronda",
+    description: "Lavadero de coches profesional con lavado a mano exterior e interior, pulido, encerado y tratamientos especializados.",
+    keywords: "lavadero coches, lavado coche a mano Ronda, limpieza interior coche, pulido coche, encerado coche",
   },
 }
 

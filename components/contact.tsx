@@ -20,7 +20,7 @@ export function Contact() {
     {
       icon: EuroIcon,
       label: "Precio",
-      value: "Precios desde 35€, consulta sin compromiso", // Puedes personalizar esto o agregarlo a la configuración
+      value: "Precios desde 40€, consulta sin compromiso", // Puedes personalizar esto o agregarlo a la configuración
     },
     {
       icon: Clock,
